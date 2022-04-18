@@ -44,7 +44,6 @@ h2 {
 p {
     font-size: 22px;
     line-height: 28px;
-    padding-right: 100px;
 }
 
 hr {
@@ -141,6 +140,10 @@ button {
 
 .video {
     border-radius: 1rem;
+}
+
+.video-description {
+    padding-right: 100px;
 }
 
 /* .gradient {
