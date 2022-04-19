@@ -17,7 +17,8 @@ body {
 }
 
 .container {
-    padding: 0px 100px;
+   padding: 0px;
+   max-width: 90%;
 }
 
 ul {
@@ -71,7 +72,7 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -79,6 +80,7 @@ button {
     text-align: center;
     padding-top: 20px;
     color: white;
+    margin: 0px;
 }
 
 .navbar {
@@ -91,7 +93,13 @@ button {
 .navbar > div > li {
     font-size: 22px;
     list-style: none;
-    margin: 0px 30px;
+    margin: 0px 30px 0px;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-link {
+    margin-left: 2.3rem;
 }
 
 .navbar > div > li:active {
@@ -107,6 +115,11 @@ button {
     align-items: center;
 }
 
+.nav-2 > li {
+    list-style: none;
+    margin-left: 30px;
+}
+
 .profile-img {
     width: 50px;
     height: 50px;
@@ -114,13 +127,17 @@ button {
     border: 2px solid #FFF;
 }
 
-.header-h1 {
-    margin-top: 170px;
+.header-h1-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0px 30px;
 }
 
 .header-p {
     margin: 35px 0px 35px 0px;
-    width: 23%;
 }
 
 
@@ -128,7 +145,7 @@ button {
 
 .main-content {
     color: var(--blueish);
-    padding: 50px 75px;
+    padding: 50px 0px;
 }
 
 .main-content-1 {
@@ -143,9 +160,8 @@ button {
 }
 
 .video-description {
-    padding-right: 100px;
+    padding-right: 50px;
 }
-
 /* .gradient {
     position: relative;
 }
@@ -170,6 +186,9 @@ button {
 
 .image-div {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .play-btn {
@@ -181,6 +200,7 @@ button {
 
 .main-nav {
     display: flex;
+    align-items: center;
     margin-bottom: 100px;
 }
 
@@ -200,16 +220,60 @@ button {
     margin-bottom: 10px;
 }
 
-
-
 /* Footer */
 
 .footer {
     border-top: 2px solid #E8E8E8;
-    padding: 0px 75px 50px 75px;
+    padding: 20px 20px 50px 20px;
     color: var(--blueish);
 }
 
 .navbar > .d-flex {
     padding-left: 0px;
 }
+
+
+
+@media only screen and (max-width: 992px) {
+
+    p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .nav-2 > li, .nav-link {
+        margin-left: 0px;
+    }
+    
+    .image-div {
+        margin-bottom: 100px;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+    .play-btn {
+        position: absolute;
+        right: 35%;
+        bottom: 27%;
+    }
+
+    .video-description {
+        padding: 0px;
+    }
+
+    .main-content-2 {
+        padding: 0% 10%;
+        justify-content: center;
+    }
+
+    .main-nav {
+        justify-content: space-between;
+    }
+
+    .main-nav > ul {
+        margin-right: 10px
+    }
+
+  }

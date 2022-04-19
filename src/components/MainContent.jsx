@@ -6,21 +6,19 @@ const htmlRemover = /(<([^>]+)>)/gi;
 export default function MainContent(props) {
   return (
     <div className="main-content">
-      <div>
+      <div className="container">
         {data.map((item) => (
-          <div className="main-content-1">
-            <div>
+          <div className="main-content-1 row">
+            <div className="col-sm-12 col-lg-6 order-2 order-lg-1">
               <h2 className="video-title">{item.title}</h2>
               <p className="video-description">
                 {item.description.replace(htmlRemover, "")}
               </p>
             </div>
-            <div className="gradient">
-              <div className="image-div">
+              <div className="col-sm-12  col-lg-6 order-1 order-lg-2 image-div">
                 <a href={item.url}><img className="video" src={item.thumbnail_large} /></a>
                 <a href={item.url}><img className="play-btn" src={playBtn} alt="play-button" /></a>
               </div>
-            </div>
           </div>
         ))}
       </div>
@@ -34,7 +32,7 @@ export default function MainContent(props) {
         </p>
       </div>
 
-      <div className="main-nav">
+      <div className="main-nav container">
         <ul>
           <li className="first-link">Fakesite</li>
           <li>About Us</li>
