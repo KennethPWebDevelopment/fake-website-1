@@ -99,7 +99,12 @@ button {
 }
 
 .nav-link {
-    margin-left: 2.3rem;
+    margin-left: 2.3rem; 
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 22px;
 }
 
 .navbar > div > li:active {
@@ -241,7 +246,7 @@ button {
         line-height: 28px;
     }
 
-    .nav-2 > li, .nav-link {
+    .nav-link {
         margin-left: 0px;
     }
     
